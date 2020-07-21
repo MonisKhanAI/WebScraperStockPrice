@@ -7,7 +7,8 @@ from flask_cors import cross_origin
 # https://web-scrapper-nse-stock-price.herokuapp.com/
 # http://livestockprice-hilarious-fox-xq.cfapps.io/
 
-# Since the project involves fetching lve data, the creation on MongoDB database seemed futile and hence I avoided it. I confirmed the same with iNeuron support team.
+# Since the project involves fetching lve data, the creation on MongoDB database seemed futile and hence I 
+# avoided it. I confirmed the same with iNeuron support team.
 
 
 # Since NSE search bar requires either company symbol or the registered name of the company, I am going ahead
