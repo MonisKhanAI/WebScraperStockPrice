@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Info Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Stock Info</div>
+
+   <table cellspacing="0">
+      <tr>
+         <th>Latest Price</th>
+         <th>Opening Price</th>
+         <th>Pr. Closing Price</th>
+         <th>Change</th>
+         <th>Percent Change</th>
+         <th>Highest Price Today</th>
+         <th>Lowest Price Today</th>
+
+      </tr>
+      <tr>
+          <td>{{Stock_Info['Latest Price']}}</td>
+         <td>{{Stock_Info['Opening Price']}}</td>
+         <td>{{Stock_Info['Pr. Closing Price']}}</td>
+         <td>{{Stock_Info['Change']}}</td>
+         <td>{{Stock_Info['Percent Change']}} </td>
+         <td>{{Stock_Info['Highest Price Today']}}</td>
+         <td>{{Stock_Info['Lowest Price Today']}}</td>
+
+   </table>
+</div>
+
+
+
+</body>
+
+</html>
